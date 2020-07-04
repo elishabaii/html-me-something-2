@@ -1,31 +1,31 @@
 h1{
     font-family: fantasy;
-    color: rgb(20, 18, 61);
+    color: rgb(55, 58, 99);
     background-color:  rgb(132, 172, 182);
     text-align: center;
     border: 5px solid rgb(20, 18, 61);
-    animation-name: myMove;   
-    animation: myMove 5s infinite;
-    
+    animation-name: changeColor;   
+    animation: changeColor 5s infinite;
 }
-@keyframes myMove{
-    0%   {top: 0px; left: 0px; background: rgb(197, 137, 137);}
-    25%  {top: 0px; left: 100px; background: rgb(122, 217, 230);}
-    50%  {top: 100px; left: 100px; background: rgb(223, 223, 137);}
-    75%  {top: 100px; left: 0px; background: rgb(79, 158, 125);}
-    100% {top: 0px; left: 0px; background: rgb(194, 151, 214);}
+
+@keyframes changeColor{
+    0%   {top: 0px; left: 0px; background: rgb(214, 169, 169);}
+    25%  {top: 0px; left: 100px; background: rgb(167, 212, 218);}
+    50%  {top: 100px; left: 100px; background: rgb(224, 224, 175);}
+    75%  {top: 100px; left: 0px; background: rgb(139, 173, 159);}
+    100% {top: 0px; left: 0px; background: rgb(190, 171, 199);}
 }
 
 
 p{
     font-size:19px;
     padding-left:15px;
-
-
 }
 ul{
     font-size:20px;
     list-style-type: none;
+    float: center;
+    
 }
 
 h2{
@@ -70,6 +70,8 @@ body{
 ol{
     list-style-type: none;
     color: rgb(20, 18, 61);
+    background-image: url("beige-stone-background-marble-texture-vector-22901553.jpg");
+    background-size: 1300px;
     background-color: rgb(218, 212, 196);
     font-weight: bold;
     font-style: italic;
@@ -80,4 +82,29 @@ ol{
 }
 .left{
     float: left;
+}
+
+.rotate-png{
+    height: 200px;
+    width: 200px;
+    border: none;
+    background: 0em;
+    transition-duration: 5s;
+    transition-property: all;
+    
+}
+.rotate-png:hover{
+    
+    background: 0em;
+    transform: rotate(360deg);
+}
+#png1{
+    float: left;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+#png2{
+    float: right;
+    margin-right: 100px;
+    margin-top: 50px;
 }
